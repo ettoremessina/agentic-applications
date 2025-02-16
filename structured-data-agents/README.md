@@ -1,6 +1,8 @@
 # structured-data-agents
 Demo and experiments with agent applications for queries on structured data.
+
 Dataset used is: ../datasets/quality_assurance.csv
+
 To install requirements run:
 - pip install -r requirements.txt
 
