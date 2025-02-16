@@ -116,3 +116,4 @@ while True:
         print(f"{bcolors.FAIL}{type(e)}")
         print(f"{bcolors.FAIL}{e.args}")
         print(f"{bcolors.FAIL}{e}")
+        print(f"{bcolors.ENDC}")
