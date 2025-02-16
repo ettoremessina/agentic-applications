@@ -15,7 +15,7 @@ class bcolors:
 
 df = pd.read_csv("../datasets/quality_assurance.csv")
 
-parser = argparse.ArgumentParser(description='Chat with an sql agent')
+parser = argparse.ArgumentParser(description='Chat with a panda agent')
 parser.add_argument('-v', '--verbose', action='store_true', help='Enable verbose output')
 parser.add_argument('-c', '--connector', type=str, required=False, default='openai', help='Connector to use: openai|ollama')
 parser.add_argument('-m', '--model', type=str, required=False, default='gpt-4', help='Model name to use (e.g. gpt-4, gemma2, llama3.2, ...)')
