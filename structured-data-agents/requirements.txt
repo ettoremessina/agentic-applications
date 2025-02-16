@@ -4,3 +4,4 @@ langchain_experimental
 langchain_openai
 tabulate
 pandas
+argparse
