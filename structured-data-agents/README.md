@@ -1,7 +1,8 @@
 # structured-data-agents
 Demo and experiments with agent applications for queries on structured data.
-
 Dataset used is: ../datasets/quality_assurance.csv
+To install requirements run:
+- pip install -r requirements.txt
 
 ## qa_pandas_agent.py
 Agentic application that uses **langchain_experimental.agents.agent_toolkits.create_pandas_dataframe_agent** to answer questions about data in a relational database table.
