@@ -6,17 +6,17 @@ Dataset used is: ../datasets/quality_assurance.csv
 ## qa_pandas_agent.py
 Agentic application that uses **langchain_experimental.agents.agent_toolkits.create_pandas_dataframe_agent** to answer questions about data in a relational database table.
 
-###Examples of usages:
-python qa_pandas_agent.py -c openai -m gpt-4o-mini -v
-python qa_pandas_agent.py -c ollama -m gemma2
+### Examples of usages:
+- python qa_pandas_agent.py -c openai -m gpt-4o-mini -v
+- python qa_pandas_agent.py -c ollama -m gemma2
 
 
 ## qa_sql_agent.py
 Agentic application that uses **langchain.agents.create_sql_agent** to answer questions about data in a relational database table.
 
-###Examples of usages:
-python qa_sql_agent.py -c openai -m gpt-4o-mini -v
-python qa_sql_agent.py -c ollama -m gemma2
+### Examples of usages:
+- python qa_sql_agent.py -c openai -m gpt-4o-mini -v
+- python qa_sql_agent.py -c ollama -m gemma2
 
 
 ## Examples of questions (for both scripts):
