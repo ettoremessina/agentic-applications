@@ -12,7 +12,9 @@ Agentic application that uses **langchain_experimental.agents.agent_toolkits.cre
 Please visit [here](https://ettoremessina.tech/agentic-applications/chat-with-your-data-a-simple-agentic-application-for-querying-a-pandas-dataframe-with-natural-language/) for concepts about this project.
 
 ### Examples of usages:
+- python qa_pandas_agent.py
 - python qa_pandas_agent.py -h
+- python qa_pandas_agent.py -v
 - python qa_pandas_agent.py -c openai
 - python qa_pandas_agent.py -c openai -m gpt-4o-mini -v
 - python qa_pandas_agent.py -c ollama
@@ -25,7 +27,9 @@ Agentic application that uses **langchain.agents.create_sql_agent** to answer qu
 Please visit [here](https://ettoremessina.tech/agentic-applications/chat-with-your-data-2-agentic-application-for-querying-databases-using-sql/) for concepts about this project.
 
 ### Examples of usages:
+- python qa_sql_agent.py
 - python qa_sql_agent.py -h
+- python qa_sql_agent.py -v
 - python qa_sql_agent.py -c openai
 - python qa_sql_agent.py -c openai -m gpt-4o-mini -v
 - python qa_sql_agent.py -c ollama
