@@ -9,7 +9,7 @@ To install requirements run:
 ## qa_pandas_agent.py
 Agentic application that uses **langchain_experimental.agents.agent_toolkits.create_pandas_dataframe_agent** to answer questions about data in a relational database table.
 
-Please visit [here](https://ettoremessina.tech/agentic-applications/chat-with-your-data-a-simple-agentic-application-for-querying-a-pandas-dataframe-with-natural-language/) for concepts about this project.
+Please visit [here](https://ettoremessina.tech/agentic-applications/chat-with-your-data-a-simple-agentic-application-for-querying-a-pandas-dataframe-with-natural-language/) for concepts about this script.
 
 ### Examples of usages:
 - python qa_pandas_agent.py
@@ -24,7 +24,7 @@ Please visit [here](https://ettoremessina.tech/agentic-applications/chat-with-yo
 ## qa_sql_agent.py
 Agentic application that uses **langchain.agents.create_sql_agent** to answer questions about data in a relational database table.
 
-Please visit [here](https://ettoremessina.tech/agentic-applications/chat-with-your-data-2-agentic-application-for-querying-databases-using-sql/) for concepts about this project.
+Please visit [here](https://ettoremessina.tech/agentic-applications/chat-with-your-data-2-agentic-application-for-querying-databases-using-sql/) for concepts about this script.
 
 ### Examples of usages:
 - python qa_sql_agent.py
