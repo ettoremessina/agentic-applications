@@ -18,14 +18,21 @@ df = pd.read_csv("../datasets/quality_assurance.csv")
 parser = argparse.ArgumentParser(description='Chat with a panda agent')
 parser.add_argument('-v', '--verbose', action='store_true', help='Enable verbose output')
 parser.add_argument('-c', '--connector', type=str, required=False, default='openai', help='Connector to use: openai|ollama')
-parser.add_argument('-m', '--model', type=str, required=False, default='gpt-4', help='Model name to use (e.g. gpt-4, gemma2, llama3.2, ...)')
+parser.add_argument('-m', '--model', type=str, required=False, default='', help='Model name to use in according with connector (e.g. gpt-4, gemma2, llama3.2, ...)')
+parser.add_argument('-ou', '--ollamaurl', type=str, required=False, default='http://localhost:11434', help='Ollama url')
 args = parser.parse_args()
 
+model_name = args.model
 if args.connector == 'openai':
-    model = ChatOpenAI(model=args.model, temperature=0.)
+    if model_name == '':
+        model_name = 'gpt-4'
+        print(f"{bcolors.WARNING}No model name provided, using default {model_name}{bcolors.ENDC}")
+    model = ChatOpenAI(model=model_name, temperature=0.)
 elif args.connector == 'ollama':
-    ollama_url = "http://localhost:11434"
-    model = Ollama(base_url=ollama_url, model=args.model, temperature=0.)
+    if model_name == '':
+        model_name = 'gemma2'
+        print(f"{bcolors.WARNING}No model name provided, using default {model_name}{bcolors.ENDC}")
+    model = Ollama(base_url=args.ollamaurl, model=model_name, temperature=0.)
 else:
     raise ValueError(f"Unsupported connector: {args.connector}. Use 'openai' or 'ollama'")
 
